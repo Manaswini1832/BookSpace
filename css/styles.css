@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.landing-div {
+  max-width: 100vw;
+  height: 100vh;
+  background-image: url("/images/Landing\ page.jpg");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.landText {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.landHead {
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  font-size: 8rem;
+}
+
+.landPara {
+  color: #ecdfce;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  padding: 5px 40px;
+}
+
+.border-div {
+  width: 94%;
+  height: 94%;
+  position: absolute;
+  top: 3%;
+  left: 3%;
+  border: 0.5px solid #fff;
+}
+
+.topLeftSq,
+.topRightSq,
+.downLeftSq,
+.downRightSq {
+  width: 2.8%;
+  height: 2.8%;
+  border: 0.5px solid #fff;
+  position: absolute;
+}
+
+.topLeftSq {
+  top: -2.8%;
+  left: -2.8%;
+}
+
+.topRightSq {
+  top: -2.8%;
+  right: -2.8%;
+}
+
+.downLeftSq {
+  bottom: -2.8%;
+  left: -2.8%;
+}
+
+.downRightSq {
+  bottom: -2.8%;
+  right: -2.8%;
+}
+/*Media queries*/
+@media only screen and (max-width: 768px) {
+  .landHead {
+    font-size: 3.5rem;
+  }
+
+  .landPara {
+    font-size: 1rem;
+  }
+}
